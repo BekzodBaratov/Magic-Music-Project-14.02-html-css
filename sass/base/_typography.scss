@@ -1,0 +1,268 @@
+.header {
+  padding: 2rem;
+  &__left {
+    gap: 2rem;
+    a {
+      padding: 0.5rem 1rem;
+      @include link;
+    }
+    &--active {
+      border: 2px solid blue !important;
+      padding: 0.5rem 1rem !important;
+      border-radius: 2rem !important;
+      background-image: linear-gradient(to left, #7058ef, #32ccf6) !important;
+      background-clip: text !important;
+      -webkit-background-clip: text !important;
+      color: transparent !important;
+    }
+  }
+  &__middle {
+    gap: 3rem;
+    &--active {
+      position: relative;
+      color: white !important;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1.5rem;
+        left: 25%;
+        width: 50%;
+        height: 3px;
+        background-color: blueviolet;
+        opacity: 1;
+        transition: 0.4s;
+      }
+    }
+    a {
+      @include link;
+    }
+  }
+  &__right {
+    gap: 3rem;
+    &--profil {
+      gap: 0.2rem;
+      select {
+        border: none;
+        background: none;
+        color: white;
+      }
+      ion-icon {
+        font-size: 3rem;
+      }
+    }
+    &--search {
+      gap: 0.5rem;
+      background-color: #505356;
+      border-radius: 2rem;
+      padding: 0.5rem;
+      ion-icon {
+        color: white;
+        font-size: 2rem;
+      }
+      input {
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.flow {
+  margin-top: 6rem;
+  &__title {
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.6rem;
+    p {
+      font-size: 5rem;
+    }
+  }
+}
+
+.recent {
+  margin-top: 6rem;
+  &__title {
+    margin-bottom: 4rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+  &__card {
+    img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    &--all {
+      &--text {
+        text-align: center;
+        color: white;
+        &--bottom {
+          color: $image-bottom-dark;
+          display: flex;
+          justify-content: center;
+          margin-top: 0.5rem;
+          font-size: 1.4rem;
+          gap: 1rem;
+          ion-icon {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.monday__title {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.hip-hop1-title {
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.popular__title {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  p {
+    color: $image-bottom-dark;
+  }
+}
+.popular__title--card {
+  a {
+    @include link;
+    p {
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+.popular__title--card--1 {
+  line-height: 1.5;
+  color: white;
+  p {
+    color: $image-bottom-dark;
+  }
+  h1 {
+    color: rgba(255, 255, 255, 0.712);
+  }
+}
+.episode__card {
+  p {
+    color: $image-bottom-dark;
+  }
+  h1 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.712);
+  }
+}
+.startalksLeft__side {
+  img {
+    width: 80%;
+  }
+  &--info {
+    line-height: 2;
+    font-size: 1.6rem;
+    p {
+      color: $image-bottom-dark;
+    }
+    &--nav {
+      a {
+        @include link;
+        color: white;
+      }
+      .act {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -0.5rem;
+          left: 25%;
+          width: 50%;
+          height: 3px;
+          background-color: blueviolet;
+          opacity: 1;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+}
+.startalksRight {
+  font-size: 2rem;
+  align-items: center;
+  button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    background-image: linear-gradient(to left, #9b2def, #35edfb);
+    color: white;
+  }
+  ion-icon {
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+}
+.startalksRights--bottom {
+  text-align: right;
+  p {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    color: $image-bottom-dark;
+  }
+}
+.startalksRights--top {
+  gap: 2rem;
+}
+
+.rock {
+  margin-bottom: 4rem;
+  &__title {
+    color: white;
+    a {
+      @include link;
+      font-size: 1.2rem;
+      color: white;
+    }
+    &--active {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1.5rem;
+        left: 25%;
+        width: 50%;
+        height: 3px;
+        background-color: blueviolet;
+        opacity: 1;
+        transition: 0.4s;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+.artists {
+  margin-top: 5rem;
+}
+.artists__main {
+  margin-top: 3rem;
+  &--1 {
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+    img {
+      width: 100%;
+    }
+  }
+}

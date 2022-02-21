@@ -1,0 +1,256 @@
+.flow__card {
+  img {
+    width: 100%;
+  }
+}
+.hip-hop {
+  margin-bottom: 6rem;
+  img {
+    width: 100%;
+  }
+}
+.popular__title--card--1 {
+  img {
+    width: 100%;
+  }
+}
+.popular {
+  margin-top: 5rem;
+}
+.episode {
+  margin-bottom: 10rem;
+  &__card {
+    margin-top: 3rem;
+    color: white;
+    line-height: 2;
+  }
+}
+.startalks {
+  height: 100vh;
+  background-image: url(/index2.img/BG.png);
+  background-position: center;
+  background-size: 80%;
+  background-size: contain;
+}
+.star {
+  color: white;
+  padding-top: 5rem;
+}
+.startalks__music {
+  &--tittle {
+    &--left {
+      gap: 1rem;
+      ion-icon {
+        font-size: 3rem;
+      }
+    }
+    &--right {
+      p {
+        font-size: 3rem;
+        color: white;
+      }
+    }
+    margin-top: 5rem;
+    color: $image-bottom-dark;
+    font-size: 1.6rem;
+  }
+}
+.startalks__music--table {
+  color: $image-bottom-dark;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.startalks__music--table1 {
+  color: $image-bottom-dark;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  &--1--left {
+    margin-top: -3rem;
+    label {
+      position: relative;
+    }
+    input {
+      display: none;
+    }
+    input:checked ~ .ion2 {
+      opacity: 1;
+      visibility: visible;
+    }
+    input:checked ~ .ion1 {
+      opacity: 0;
+      visibility: hidden;
+    }
+    ion-icon {
+      color: white;
+      font-size: 3rem;
+      position: absolute;
+      transition: 0.4s all;
+    }
+    .ion2 {
+      opacity: 0;
+    }
+  }
+  &--1--right {
+    line-height: 1.7;
+    h1 {
+      color: rgba(255, 255, 255, 0.801);
+    }
+  }
+  &--2 {
+    &--grad {
+      width: 100%;
+      background-color: $image-bottom-dark;
+      height: 3px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 70%;
+        background-color: rgb(17, 87, 236);
+        top: 0;
+        left: 0;
+        height: 3px;
+      }
+    }
+  }
+}
+.new_playlist {
+  color: white;
+  h2 {
+    margin-top: 2rem;
+  }
+  .cr7 {
+    background-image: linear-gradient(to left, #4827eb, #1897b9) !important;
+    border: none;
+  }
+  .cr6 {
+    @include link;
+    color: white;
+    margin-top: 2rem;
+    border: 1px solid white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+  }
+  textarea {
+    color: white;
+    resize: none;
+    margin-top: 2rem;
+    width: 100%;
+    background: none;
+    outline: none;
+    border-bottom: 3px solid $image-bottom-dark;
+  }
+  .wtf {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid blueviolet;
+  }
+  &--title {
+    ion-icon {
+      font-size: 3rem;
+      color: white;
+    }
+  }
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border: 1px solid white;
+  width: 30%;
+  background-color: #3a3a3d;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+}
+#play_new1 {
+  opacity: 0;
+}
+
+#play_new1:target {
+  opacity: 1;
+}
+#new_play:target #play_new1 {
+  opacity: 0;
+}
+
+.today {
+  &__title {
+    margin-top: 4rem;
+    color: white;
+    font-size: 1.6rem;
+  }
+}
+.today__main {
+  margin-top: 3rem;
+  p {
+    font-size: 1.6rem;
+    color: $image-bottom-dark;
+  }
+  .white {
+    color: rgba(255, 255, 255, 0.835);
+  }
+  ion-icon {
+    color: white;
+    font-size: 2rem;
+  }
+}
+.today2 {
+  margin-top: 10rem;
+  &--btn {
+    margin-top: 5rem;
+    a {
+      border-radius: 2rem;
+      @include link;
+      color: white;
+      border: 1px solid white;
+      padding: 0.8rem 2rem;
+    }
+    text-align: center;
+  }
+}
+.today__title ion-icon {
+  font-size: 3rem;
+}
+.march {
+  color: white;
+  margin-top: 3rem;
+  a {
+    @include link;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+.pod__search {
+  transform: translate(150%);
+  opacity: 0;
+  transition: 1s all;
+  &:target {
+    transform: translate(0);
+    opacity: 1;
+  }
+  position: absolute;
+  width: 22vw;
+  height: 80vh;
+  top: 9vh;
+  right: 3vw;
+  background-color: #303033;
+  padding: 2rem;
+  color: white;
+  &--title {
+    margin: 1rem 0rem;
+    margin-bottom: 3rem;
+    .cl {
+      color: $image-bottom-dark;
+      font-weight: 500;
+    }
+  }
+  &--1 {
+    line-height: 1.6;
+    h2 {
+      color: rgba(255, 255, 255, 0.808);
+    }
+    p {
+      color: $image-bottom-dark;
+    }
+  }
+}

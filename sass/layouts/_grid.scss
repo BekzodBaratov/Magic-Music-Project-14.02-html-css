@@ -1,0 +1,49 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexgap {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.gridr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10rem;
+  row-gap: 4rem;
+  align-items: center;
+  justify-items: center;
+}
+.grid6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  column-gap: 3rem;
+  row-gap: 5rem;
+}
+.gridf {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: center;
+}
+.gridm {
+  display: grid;
+  grid-template-columns: 8fr 1fr 1fr 0.5fr;
+  gap: 2rem;
+  align-items: center;
+}
+.gridg {
+  display: grid;
+  grid-template-columns: 0.5fr 8fr 1fr 1fr 0.5fr;
+  gap: 2rem;
+  align-items: center;
+}
